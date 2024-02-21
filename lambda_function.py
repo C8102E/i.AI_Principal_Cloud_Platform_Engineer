@@ -10,7 +10,7 @@ logger = logging.getLogger()
 logger.setLevel(logging.INFO)
 
 
-def weather_retrieve(api_key, city_name, bucket_name):
+def weather_retrieve(bucket_name):
     """
     Placeholder for retrieving weather data and storing it in an S3 bucket.
     """
@@ -22,12 +22,6 @@ def weatherETL(data):
     Placeholder for transforming data.
     """
     return "transformed data"
-
-
-def weather_transformed(bucket_name, object_key, data):
-    """
-    Placeholder for loading data to an S3 bucket.
-    """
 
 
 def lambda_handler(event, context):
